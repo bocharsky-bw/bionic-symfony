@@ -80,14 +80,6 @@ class User implements UserInterface, \Serializable
     /**
      * @inheritDoc
      */
-    public function getRoles()
-    {
-        return array('ROLE_USER');
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function eraseCredentials()
     {
     }
