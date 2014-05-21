@@ -10,20 +10,17 @@ BW\UserBundle\Entity\User:
                 strategy: AUTO
     fields:
         username:
-            name: username
             type: string
             length: 25
             unique: true
         password:
-            name: password
             type: string
             length: 64
         email:
-            name: email
             type: string
             length: 60
             unique: true
         isActive:
-            name: is_active
+            column: is_active
             type: boolean
     lifecycleCallbacks: {  }
